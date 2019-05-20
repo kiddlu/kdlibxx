@@ -130,7 +130,7 @@ int main(int argc, char **argv)
     char *fp = gopt.file_path;
 
     if(fp == NULL || width == 0 || height == 0){
-            printf("usage:\n");
+            printf("usage: -w width -h height -p path\n");
             return 0;
     } else if(!file_exist(fp)) {
             printf("file not exist\n");
